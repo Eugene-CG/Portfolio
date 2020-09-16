@@ -1,0 +1,153 @@
+.flex-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap {
+	flex-direction: column;
+	background-color: #bbe1fa;
+	font-family: monospace;
+	overflow: hidden;
+	color: #1b262c;
+}
+
+.header {
+	width: 100%;
+	height: 25vh;
+	font-size: 2em;
+}
+
+.header__list {
+	display: flex;
+	list-style: none;
+	width: 90%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.header__list-item {
+}
+
+.header__list-item_link {
+	text-decoration: none;
+	color: #1b262c;
+}
+
+.main {
+	height: 75vh;
+	width: 100%;
+}
+
+.main__inner {
+}
+
+.main__text {
+	font-size: 3.5em;
+
+}
+
+.section {
+	height: 100vh;
+	width: 100%;
+
+}
+
+.about__inner {
+	height: 100%;
+	width: 60%;
+}
+
+.about__text {
+	line-height: 1em;
+	font-size: 2em;
+}
+
+.whatido {
+
+}
+
+.whatido__inner {
+	height: 100%;
+	width: 60%;
+}
+
+.whatido__text {
+	line-height: 1em;
+	font-size: 2em;
+}
+
+.footer {
+	flex-shrink: 0;
+	width: 100vw;
+	height: 50px;
+}
+
+.footer__inner {
+	height: 100%;
+	width: 100%;
+}
+
+.footer__contact-me {
+	height: inherit;
+	width: inherit;
+}
+
+.footer__list {
+	height: inherit;
+	width: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer__list-item:first-child a img {
+	border-radius: 50%;
+}
+
+/*progress bar*/
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+#progressbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	background: linear-gradient(to top, #08f5ea, #544efb);
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+	0%, 100% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+#progressbar:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #08f5ea, #544efb);
+	filter: blur(10px);
+}
+
+#progressbar:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #08f5ea, #544efb);
+	filter: blur(30px);
+}
