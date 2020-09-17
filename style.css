@@ -27,12 +27,15 @@
 	align-items: flex-end;
 }
 
-.header__list-item {
-}
-
 .header__list-item_link {
 	text-decoration: none;
 	color: #1b262c;
+}
+
+.header__list-item_link:hover {
+	color: white;
+	text-shadow: 0 0 5px ;
+	transition: 1s ease-in;
 }
 
 .main {
@@ -40,18 +43,15 @@
 	width: 100%;
 }
 
-.main__inner {
-}
 
 .main__text {
 	font-size: 3.5em;
-
+	animation: h-animation 1s linear infinite;
+	transition: 2s ease-in;
 }
-
 .section {
 	height: 100vh;
 	width: 100%;
-
 }
 
 .about__inner {
@@ -62,10 +62,6 @@
 .about__text {
 	line-height: 1em;
 	font-size: 2em;
-}
-
-.whatido {
-
 }
 
 .whatido__inner {
@@ -151,3 +147,4 @@
 	background: linear-gradient(to top, #08f5ea, #544efb);
 	filter: blur(30px);
 }
+
